@@ -22,10 +22,12 @@ st.set_page_config(
 # ─── CONFIGURATIE ─────────────────────────────────────────────────────────────
 TICKER = "IWDA.AS"
 ISIN = "IE00B4L5Y983"
-AANDELEN = 35
-GEMIDDELDE_AANKOOPPRIJS = 112.42
 DIP_DREMPEL_PCT = 5.0
 RSI_DREMPEL = 40
+
+# Persoonlijke data via Streamlit Secrets (veilig, niet in code)
+AANDELEN = int(st.secrets.get("aandelen", 35))
+GEMIDDELDE_AANKOOPPRIJS = float(st.secrets.get("aankoopprijs", 112.42))
 
 # ─── STIJL (mobiel-vriendelijk) ───────────────────────────────────────────────
 st.markdown("""
