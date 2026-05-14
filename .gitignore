@@ -1,0 +1,6 @@
+# Gevoelige bestanden — NIET naar GitHub
+.claude/
+*.log
+__pycache__/
+.DS_Store
+*.pyc
